@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+const App = () => {
+  const googleWebAppUrl = 'https://script.google.com/macros/s/AKfycbwrMPkfpOaA0xgHrb5iWEerIK9GRNJFpSMwbZ4-htN_0M-OnoXSTmhSVwdXUzYveZI2VQ/exec';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        position: 'relative',
+        width: '100%',
+        height: '100vh',
+        margin: 0,
+        padding: 0,
+        backgroundColor: '#ffffff', // Match this with the Google Web App's background
+      }}
+    >
+      <iframe
+        src={googleWebAppUrl}
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          border: 'none',
+        }}
+        scrolling="no"
+        title="Google Web App"
+      />
     </div>
   );
-}
+};
 
 export default App;
