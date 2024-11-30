@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css'; // Import global styles
-import App from './App'; // Import the main App component
-import * as serviceWorkerRegistration from './serviceWorkerRegistration'; // Import the service worker
+import App from './App';
+
+// Import the service worker for PWA
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root') // This is where the App gets rendered in the DOM
+  document.getElementById('root')
 );
 
-// Register the service worker to enable PWA functionality
+// Register the service worker
 serviceWorkerRegistration.register();
