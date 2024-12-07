@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 const App = () => {
-  const googleWebAppUrl = 'https://script.google.com/macros/s/AKfycbwCtHf2E69EIIG4fBK6bRyS-55AxQESBtj_RQ1KaAM0K25eXCTQPkF4xF7ypCq9W5Na5g/exec';
+  //appscript URL
+  const googleWebAppUrl = 'https://script.google.com/macros/s/AKfycbwaYGDBmWvTyiCT9R-j4DZls3H5xqJMuZ0dz1LlBZWkXTHETdv2tVn-XkmYeGHdUChifg/exec';
   const iframeRef = useRef(null); // Ref to access the iframe element
   const [loading, setLoading] = useState(false); // State to control loader visibility
   const [buttonDisabled, setButtonDisabled] = useState(false); // State to control button disabled state
